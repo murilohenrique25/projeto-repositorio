@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+/* //#171717; */
+/* //#00df5e; */
+
+/* ------------------------ Page one*/
+
+body{
+    background-color: #171717!important;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+}
+#navbarSupportedContent,
+#navbarSupportedContent a{
+    color: white;
+}
+
+#description-page-one{
+    min-height: 500px;
+}
+
+h2.name-dev::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: piscar .7s infinite;
+}
+
+img.img-topo {
+    width: 100%;
+}
+/* ------------------------------------ About me */
+#description-page-about{
+    padding-top: 25px;
+}
+h2.about-me{
+    text-align: center;
+}
+@media screen and (min-width: 451px){
+    p.descripton-about-me{
+        text-align: justify;
+        top: 30%;
+        position: relative;
+    }
+    .name-dev{
+        margin-top: 120px;
+        font-size: 40px;   
+    }
+    .card-img{
+        width: 100%;
+        height: 230px;
+    }
+    .card-img.controle{
+        background-image: url(img/control.png);
+    }
+    .card-img.radio{
+        background-image: url(img/radio.png);
+    }
+    .card-img.andrologico{
+        background-image: url(img/andrologico.png);
+    }
+    .card-img.calculadora{
+        background-image: url(img/calculadora.png);
+    }
+}
+
+.contact{
+flex-direction: row;
+}
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	text-align: center;
+	/* font-size: 1.5em; */
+}
+svg{
+    color: #00DF5E;
+}
+.title-contact{
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+.title-info{
+    font-size: 0.8em;
+    font-weight: 700;
+
+}
+.title-info a{
+    color: white;
+    text-decoration: none;
+}
+
+/*  */
+h5.card-title {
+    font-size: 16px;
+}
+div#description-page-about-skills,
+div#description-page-services,
+div#description-page-projects,
+div#description-page-helloWord{
+    padding: 50px 0;
+    min-height: 300px;
+}
+div#description-page-about-skills h2,
+div#description-page-services h2,
+div#description-page-projects h2{
+    text-align: center;
+}
+.description-skill,
+.description-projects{
+    margin-top: 25px;
+}
+.description-projects .btn-primary{
+    background-color: #00DF5E;
+    border-color: #00DF5E;
+}
+
+/* Geral */
+.card {
+    background: #212121;
+    margin-bottom: 15px;
+}
+.hidden{
+    display: none;
+}
+
+/*  */
+
+div#description-page-services .card .item-svg{
+    padding: 1rem 1rem;
+}
+div#description-page-services .card{
+    border-bottom: 3px solid #00DF5E;
+}
+
+#description-page-helloWord p{
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #6e6e6e;
+}
+/* Media */
+
+@media screen and (max-width: 450px) {
+    p.descripton-about-me{
+        text-align: justify;
+        top: 30%;
+    }
+    .name-dev{
+        margin-top: 50px;
+        font-size: 40px;   
+    }
+  
+}
+
+
+#btnTop{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    height: 60px;
+    width: 60px;
+    background: transparent;
+    border: none;
+    display: none;
+}
+@keyframes piscar{
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Barra de rolagem */
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #00DF5E;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
